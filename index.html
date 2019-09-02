@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>John Bryce Misson 1</title>
+    <link rel="stylesheet" href="./bootstrap/bootstrap.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron bg-primary mt-2">
+        <h1 class="display-3 text-center text-white">Vacations Application</h1>
+      </div>
+      <ion-icon name="heart"></ion-icon>
+      <form id="create_vacation_form" class="w-75 m-auto">
+        <div class="form-group">
+          <label for="vacation_name">Vacation Destination</label>
+          <input
+            type="text"
+            class="form-control"
+            id="vacation_name"
+            placeholder="Enter vacation destination"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="vacation_image">Vacation Image</label>
+          <input
+            type="text"
+            class="form-control"
+            id="vacation_image"
+            placeholder="Enter vacation image url"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="vacation_price">Vacation Destination</label>
+          <input
+            type="number"
+            class="form-control"
+            id="vacation_price"
+            placeholder="Enter vacation cost"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="vacation_raiting">Vacation Raiting</label>
+          <select class="form-control" id="vacation_raiting" required>
+            <option value="excellent">excellent</option>
+            <option value="good">good</option>
+            <option value="regular">regular</option>
+            <option value="bad">bad</option>
+          </select>
+        </div>
+
+        <button
+          id="save-btn"
+          type="button"
+          class="btn btn-outline-primary btn-lg"
+        >
+          Submit
+        </button>
+      </form>
+      <hr />
+      <div id="insert_card" class="row"></div>
+    </div>
+
+    <!-- bootstrap js cdn -->
+    <!-- <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script> -->
+    <script src="./index.js"></script>
+  </body>
+</html>
